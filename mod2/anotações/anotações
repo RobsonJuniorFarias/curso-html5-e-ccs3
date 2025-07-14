@@ -1,0 +1,23 @@
+Ação	Comando / Passo	Descrição
+Voltar uma pasta no terminal	cd ..	Sobe um nível na hierarquia de pastas
+Entrar em uma pasta	cd nome-da-pasta	Entra na pasta especificada
+Criar uma pasta	mkdir nome-da-pasta	Cria uma nova pasta
+Abrir arquivo no VSCode	code nome-do-arquivo.extensao	Abre arquivo no editor VSCode
+Visualizar conteúdo no terminal	cat nome-do-arquivo ou less nome-do-arquivo	Mostra conteúdo do arquivo no terminal
+Inicializar repositório Git	git init	Inicializa repositório Git no diretório atual
+Verificar status do Git	git status	Mostra arquivos modificados, não rastreados e status geral
+Adicionar arquivos para commit	git add . ou git add nome-do-arquivo	Adiciona arquivos para área de stage (preparar para commit)
+Fazer commit com mensagem	git commit -m "mensagem do commit"	Salva as alterações com mensagem explicativa
+Enviar alterações para o GitHub	git push ou git push origin branch	Envia commits para repositório remoto
+Configurar nome e e-mail Git	git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"	Configura identidade para commits
+Criar e mudar para branch nova	git checkout -b nome-da-branch	Cria branch e já muda para ela
+Mudar para branch existente	git checkout nome-da-branch	Troca para a branch especificada
+Enviar branch nova para GitHub	git push -u origin nome-da-branch	Envia a branch para remoto e associa a upstream
+Listar branches locais	git branch	Mostra todas as branches locais
+Atualizar branch principal	git checkout main
+git pull origin main	Troca para main e puxa alterações do remoto
+Fazer merge de branch na main	git merge nome-da-branch	Junta alterações da branch informada na branch atual
+Criar Pull Request no GitHub	Acessar o link sugerido pelo GitHub e seguir instruções	Interface web para revisar e mesclar branches
+Ver último commit (detalhado)	git log -1	Mostra o último commit com hash, autor, data e mensagem
+Ver só mensagem do último commit	git log -1 --pretty=%B	Mostra somente a mensagem do último commit
